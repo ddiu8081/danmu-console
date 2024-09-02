@@ -38,7 +38,6 @@ export class App {
         this.options.cookie = c?.cookie || ''
         this.options.uid = c?.uid
       } catch (error) {
-        console.error(error)
         throw new Error('配置文件格式不正确')
       }
     } else if(!this.options?.cookie || !this.options?.uid) {
@@ -57,6 +56,7 @@ export class App {
             this.options.uid = c.uid
           }
         } catch {
+          // ignore
         }
       }
     }
@@ -93,14 +93,14 @@ export class App {
         throw new Error('UID 格式不正确')
       }
     }
-
+    
     startListen(this.roomId, handler, {
-      // ws: {
-      //   headers: {
-      //     'Cookie': this.options?.cookie || "",
-      //   },
-      //   uid,
-      // },
+      ws: {
+        headers: {
+          'Cookie': this.options?.cookie || "",
+        },
+        uid,
+      },
     })
   }
 
