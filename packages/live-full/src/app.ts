@@ -95,12 +95,12 @@ export class App {
     }
 
     startListen(this.roomId, handler, {
-      ws: {
-        headers: {
-          'Cookie': this.options?.cookie || "",
-        },
-        uid,
-      },
+      // ws: {
+      //   headers: {
+      //     'Cookie': this.options?.cookie || "",
+      //   },
+      //   uid,
+      // },
     })
   }
 

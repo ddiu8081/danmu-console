@@ -4,7 +4,7 @@ import { cac } from 'cac'
 
 import { liveFull } from './actions/live-full'
 import { liveMini } from './actions/live-mini'
-import { editConfigFile } from './actions/edit'
+import { edit } from './actions/edit'
 
 const cli = cac(name)
 
@@ -26,7 +26,7 @@ cli
   cli
   .command('edit', 'Open editor to edit cli config file')
   .option('--config [config]', 'Custom config file path', { default: 'bilicli.config.js' })
-  .action(editConfigFile)
+  .action(edit)
 
 cli.help()
 cli.version(version)

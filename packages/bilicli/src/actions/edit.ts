@@ -4,6 +4,6 @@ export interface EditOptions {
   config: string
 }
 
-export function editConfigFile(options: EditOptions) {
+export function edit(options: EditOptions) {
   openEditor(options.config)
 }
