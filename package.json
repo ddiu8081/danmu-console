@@ -12,9 +12,12 @@
     "tui"
   ],
   "author": "ddiu8081 <ddiu8081@gmail.com>",
+  "scripts": {
+    "build": "pnpm -r --parallel build"
+  },
   "devDependencies": {
-    "@types/node": "^18.11.10",
-    "tsup": "^6.5.0",
-    "typescript": "^4.9.3"
+    "@types/node": "22.5.2",
+    "tsup": "8.2.4",
+    "typescript": "5.5.4"
   }
 }

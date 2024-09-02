@@ -5,8 +5,8 @@ interface ArgOptions {
   rank: boolean
 }
 
-const liveMini = async(roomId: string, options: ArgOptions) => {
-  startApp(~~roomId, {
+const liveMini = async (roomId: string, options: ArgOptions) => {
+  await startApp(~~roomId, {
     badge: options.badge,
     rank: options.rank,
   })

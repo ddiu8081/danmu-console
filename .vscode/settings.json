@@ -3,5 +3,12 @@
     "blive",
     "danmu",
     "temir"
-  ]
+  ],
+  "rust-analyzer.linkedProjects": [
+    "./packages/bilicli-napi/Cargo.toml"
+  ],
+  "rust-analyzer.cargo.features": [
+    "platform-napi"
+  ],
+  "rust-analyzer.procMacro.ignored": { "napi-derive": ["napi"] }
 }

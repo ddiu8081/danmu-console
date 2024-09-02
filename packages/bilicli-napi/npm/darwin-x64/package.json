@@ -1,0 +1,18 @@
+{
+  "name": "@bilicli/bilicli-napi-darwin-x64",
+  "version": "0.0.2",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "license": "MIT",
+  "main": "bilicli-napi.darwin-x64.node",
+  "files": [
+    "bilicli-napi.darwin-x64.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  }
+}
