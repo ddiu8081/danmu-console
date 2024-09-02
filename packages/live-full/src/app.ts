@@ -24,7 +24,7 @@ export class App {
 
   constructor(roomId: string | undefined | number, private options: AppOptions) {
     if (!roomId) {
-      const config = getConfigPath(this.options.config!)
+      const config = getConfigPath(this.options.config)
 
       if (!existsSync(config)) {
         throw new Error('房间号或配置文件路径不能为空')
@@ -42,7 +42,7 @@ export class App {
         throw new Error('配置文件格式不正确')
       }
     } else if(!this.options?.cookie || !this.options?.uid) {
-      const config = getConfigPath(this.options.config!)
+      const config = getConfigPath(this.options.config)
       if (existsSync(config)) {
         try {
           const require = createRequire(join(config, '..'))
@@ -120,7 +120,7 @@ export class App {
   }
 }
 
-function getConfigPath(config: string) {
+function getConfigPath(config: string = 'bilicli.config.js') {
   let target = config
   let userinfo = userInfo()
   
