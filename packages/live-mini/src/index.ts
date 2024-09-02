@@ -2,6 +2,11 @@ import { startInstance } from './instance'
 import { getRoomInfo } from './utils/getInfo'
 import { roomInfoCom } from './component/roomInfo'
 
+export interface AppOptions {
+  badge: boolean
+  rank: boolean
+}
+
 const startApp = async (roomId: number, options: AppOptions) => {
   const roomInfo = await getRoomInfo(roomId)
   if (!roomInfo) {

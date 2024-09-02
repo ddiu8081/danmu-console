@@ -7,7 +7,6 @@ import { liveMini } from './actions/live-mini'
 
 const cli = cac(name)
 
-// live(mini)
 cli
   .command('live <room_id>', 'Open live console in mini mode')
   .option('--no-badge', 'Hide badge of user')

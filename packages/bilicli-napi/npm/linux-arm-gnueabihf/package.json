@@ -1,0 +1,18 @@
+{
+  "name": "@bilicli/bilicli-napi-linux-arm-gnueabihf",
+  "version": "0.0.2",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "arm"
+  ],
+  "license": "MIT",
+  "main": "bilicli-napi.linux-arm-gnueabihf.node",
+  "files": [
+    "bilicli-napi.linux-arm-gnueabihf.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  }
+}
